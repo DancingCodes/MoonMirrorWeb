@@ -22,8 +22,6 @@ import { showConfirmDialog } from 'vant';
 import { io } from "socket.io-client";
 
 const sock = io(import.meta.env.VITE_APP_API_URL);
-// const sock = io('https://moonmirrorapi.moonc.love');
-
 const roomId = '001'
 // 连接Socket服务器
 sock.on("connectionSuccess", () => {
